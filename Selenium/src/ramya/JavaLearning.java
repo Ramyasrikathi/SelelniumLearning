@@ -47,9 +47,21 @@ public class JavaLearning {
 		 System.out.println("Double: "+ b);
 		 System.out.println("Int: "+ a);
 	 }
+	 
+	 public void formatingoutput() {
+		 
+		 System.out.println("========================");
+		 for(int i=0;i<3;i++) {
+			 String st = scanner.next();
+			 int q = scanner.nextInt();
+			 System.out.printf("%-15s%03d%n", st , q);
+			 
+		 }
+		 System.out.println("========================");
+		  }
 	public static void main(String[] args) {
 		JavaLearning jl = new JavaLearning();
-		jl.readinputtwo();
+		jl.formatingoutput();
 	}
 
 }
